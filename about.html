@@ -1,10 +1,65 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="meal.css">
+    
 </head>
 <body>
+
+    <nav id="navbar">
+        <div class="navTitle">🍲 Meal Finder </div>
+        <div class="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div class="aboutPage">
+        <p class="eyebrow"> About</p>
+        <h1 class="site-title"> What can you search for? </h1>
+
+        <div class="aboutBox">
+            <h3>Search by dish name </h3>
+            <p>Type any meal name (e.g. "Arrabiata", "Tacos", "Ramen") to search TheMealDB's recipe database.</p>
+        </div>
+
+        <div class="aboutBox">
+            <h3>What you'll see for each meal </h3>
+            <p>Meal ID, meal name, meal image, category, and the full cooking instructions for every matching recip </p>
+        </div>
+
+        <div class="aboutBox">
+            <h3>Browsing results </h3>
+            <p> The first 5 matches show right away. If there are more, a "SHOW ALL" button reveals the rest. </p>
+
+
+        </div>
+
+        <div class="aboutBox">
+            <h3>Data source</h3>
+            
+            <!-- learned rel="noopener" from internet, keeps the new tab from accessing this page -->
+            <p>All recipe data comes from the free <a href="https://www.themealdb.com" 
+                target="_blank" rel="noopener"> TheMealDB API </a> - no login or API key needed.  </p>
+        </div>
+
+    </div>
+
+    <footer id="pageFooter">
+
+        <p>MIS455 Assignment &copy; 2026</p>
+        <p>Made by <b>Farhana Ahmed</b> &middot; ID: 2312079</p>
+        <p>Data Source: TheMealDB API</p>
+
+    </footer>
+
+
     
 </body>
 </html>
