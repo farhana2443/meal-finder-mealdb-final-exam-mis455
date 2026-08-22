@@ -107,7 +107,7 @@ body {
     border-left: 4px solid #E8A73B; 
     background-color: white;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); 
-    
+
 }
  
 .aboutBox h3 {
@@ -123,4 +123,73 @@ body {
  
 .aboutBox a {
     color: #C1440E;
+}
+.search-ticket {
+    max-width: 460px;
+    margin: 0 0 14px;
+    background-color: white;
+    border: 2px dashed #E8A73B; /* professional touch: dashed border gives it a ticket/coupon look, learned it from internet*/
+    border-radius: 10px;
+    padding: 8px;
+    display:  flex; 
+    gap: 10px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+ 
+.ticket-input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 12px;
+    color: #1B1712;
+
+}
+ 
+.ticket-input:focus { /* professional touch: removes the default blue outline for a cleaner look, learned it from internet */
+    outline: none;
+}
+ 
+.ticket-btn {
+    background-color: #C1440E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0 26px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+ 
+.ticket-btn:hover { 
+    background-color:  #E8A73B;
+    color: #1B1712;
+    transform: translateY(-1px);
+
+}
+ 
+.status-text {
+    text-align: left;
+    margin: 0 0 20px;
+    font-weight: 600;
+    color: #8A8072;
+}
+ 
+.container {
+    padding-top: 30px;
+
+}
+ 
+
+.recipe-card {
+    position: relative;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18); 
+    transition: 0.2s; 
+    
 }
