@@ -21,20 +21,52 @@
         <div class="navTitle">🍲 Meal Finder</div>
 
         <div class="navLinks">
-            <a href="index.html">Home</a>
+            <a href="index.html">Home </a>
             <a href="about.html">About</a>
         </div>
     </nav>
     <header class="hero">
+        <div class="hero-text">
+            <p class="eyebrow">MealDB Search &middot; MIS455</p>
+            <h1 class="site-title">Feeling hungry?</h1>
+
+            <p class="site-sub">
+                Search any recipe by name and get the full category and cooking instructions, straight from TheMealDB.
+            </p> 
+            <div class="search-ticket">
+                <input id="mealInput" type="text" class="ticket-input" placeholder="e.g. Arrabiata, Tacos, Ramen" >
+                <!-- learned placeholder from internet, user can understand how to type -->
+
+                <button onclick="connect()" class="ticket-btn"> Search </button>
+
+
+            </div>
+            <div id="statusArea" class="status-text"> 
+
+            </div>
+
+        </div>
 
         <div class="hero-image">
             <img src="food_image.jpeg" alt="Food">
         </div>
+
     </header>
 
-    <div class="container"></div>
+    <div class="container">
 
-    <footer id="pageFooter"></footer>
+        <div id="displayArea" class="row"> 
+        </div>
+
+    </div>
+
+    <footer id="pageFooter">
+
+        <p class="mb-1"> MIS455 Assignment &copy; 2026 </p>
+        <p class="mb-1"> Made by <b>Farhana Ahmed</b> &middot; ID:2312079 </p>
+        <p class="mb-0"> Data Source: TheMealDB API </p>
+
+    </footer>
 
     <script src="meal.js"></script>
     
