@@ -68,11 +68,48 @@ function display(data) {
 
             oldContent.appendChild(buttonDiv);
         }
-        
+
     }
 
     // Learned from internet; used to bring the page back to the top after a new search.
     window.scrollTo(0, 0);
 
+}
+
+function showAllMeals() {
+
+    var oldContent = document.getElementById("displayArea");
+    var showAllArea = document.getElementById("showAllArea");
+
+    showAllArea.textContent = "";
+
+    for (var i = 6; i <= allMeals.length; i++) {
+        addMealCard(allMeals[i - 1], oldContent);
+
+    }
+}
+
+// addMealCard() is a helper function - avoids writing the same card-building code twice in display() and showAllMeals(). This idea (reusable helper function) wasn't shown exactly like this in class. 
+function addMealCard(meal, container) {
+
+    var newDiv = document.createElement("div");
+
+    newDiv.classList.add("col-md-4");
+    newDiv.classList.add("mb-4");
+
+    newDiv.innerHTML = `
+    <div class="recipe-card">
+        <img src="${meal.strMealThumb}" class="recipe-card-img" alt="${meal.strMeal}">
+        <div class="recipe-card-body">
+            <span class="ticket-stub">#${meal.idMeal} &middot; ${meal.strCategory}</span>
+            <h3 class="recipe-title">${meal.strMeal}</h3>
+            <p class="recipe-tagline">${meal.strArea} dish</p>
+            <p class="recipe-instructions">${meal.strInstructions}</p>
+        </div>
+        
+    </div>
+`;
+// MealDB has no separate "title" field, only strMeal (name) - using and strArea (cuisine origin, e.g. "Italian") as the closest stand-in
+    container.appendChild(newDiv);
 }
 
