@@ -125,7 +125,7 @@ body {
     color: #C1440E;
 }
 .search-ticket {
-    max-width: 460px;
+    max-width:  460px;
     margin: 0 0 14px;
     background-color: white;
     border: 2px dashed #E8A73B; /* professional touch: dashed border gives it a ticket/coupon look, learned it from internet*/
@@ -191,5 +191,106 @@ body {
     overflow: hidden; 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18); 
     transition: 0.2s; 
+
+}
+.recipe-card:hover { 
+    transform: translateY(-6px);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
+}
+
+.recipe-card {
+    position: relative;
+    background-color: white;
+    border-radius: 4px;
+    border-top: 6px solid #E8A73B; /* professional touch: accent strip on top of each card. I learned this from internet */
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    transition: 0.2s;
+}
+ 
+.recipe-card-img {
+
+    width: 100%;
+    height: 190px;
+    object-fit:  cover; 
+    display: block;
+}
+ 
+.recipe-card-body {
+
+    padding: 18px;
+}
+ 
+.ticket-stub {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace; 
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+    background-color: #1B1712;
+    color: #E8A73B;
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin-bottom:  12px;
+}
+ 
+.recipe-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    margin: 0 0 4px;
+    color: #1B1712;
+}
+.recipe-tagline {
+    font-style: italic; 
+    font-size: 0.82rem;
+    color: #8A8072;
+    margin: 0 0 12px;
+
+}
+ 
+.recipe-instructions {
     
+    font-size: 0.86rem;
+    color: #5A5044;
+    max-height: 140px; 
+    overflow-y: auto; 
+    line-height: 1.5;
+    margin: 0;
+}
+ 
+
+#showAllArea {
+    text-align: center;
+    margin: 10px 0 40px;
+}
+ 
+#showAllArea button {
+    background-color: transparent; 
+    border: 2px solid #4F7942 ;
+    color: #4F7942;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius:  6px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+ 
+#showAllArea button:hover { 
+    background-color: #4F7942;
+    color: white;
+}
+
+#pageFooter {
+    background-color: #C1440E;
+    color: white;
+    text-align:  center;
+    padding: 16px;
+    font-size: 0.8rem;
+    margin-top: 25px;
+}
+ 
+
+#pageFooter b {
+    color: #E8A73B;
 }
